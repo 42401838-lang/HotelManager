@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefWidth="400.0" spacing="20.0" style="-fx-background-color: white; -fx-background-radius: 15; -fx-border-radius: 15;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teoria.hotelmanager.ReservacionController">
+
+    <children>
+        <!-- Encabezado -->
+        <HBox alignment="CENTER_LEFT">
+            <children>
+                <Label text="Reservar Habitación" textFill="#1a202c">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+
+        <!-- Info de Habitación -->
+        <VBox spacing="5.0" styleClass="habitacion" stylesheets="@../../Estilos/Estilos.css">
+            <children>
+                <Label text="Habitación" textFill="#718096">
+                    <font>
+                        <Font size="12.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lblHabitacion" text="" textFill="#5850ec">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lblPrecio" text="" textFill="#718096" />
+            </children>
+            <padding>
+                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+            </padding>
+        </VBox>
+
+        <!-- Nombre huésped -->
+        <VBox spacing="10.0">
+            <children>
+                <Label text="👤 Nombre del Huésped" textFill="#4a5568">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtHuesped" prefHeight="40.0" promptText="Nombre completo" style="-fx-background-radius: 8; -fx-border-color: #e2e8f0;                               -fx-border-radius: 8; -fx-background-color: white;" />
+            </children>
+        </VBox>
+
+        <!-- Fechas -->
+        <HBox spacing="15.0">
+            <children>
+                <VBox spacing="10.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <Label text="📅 Check-in" textFill="#4a5568">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <DatePicker fx:id="dpCheckIn" prefHeight="40.0" style="-fx-background-radius: 8;" />
+                    </children>
+                </VBox>
+                <VBox spacing="10.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <Label text="📅 Check-out" textFill="#4a5568">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <DatePicker fx:id="dpCheckOut" prefHeight="40.0" style="-fx-background-radius: 8;" />
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+
+        <!-- Error -->
+        <Label fx:id="lblError" style="-fx-text-fill: red; -fx-font-size: 13px;" text="" />
+
+        <!-- Botón -->
+        <Button fx:id="btnConfirmar" maxWidth="1.7976931348623157E308" onAction="#confirmarReservacion" prefHeight="50.0" style="-fx-background-color: #5850ec;" styleClass="button1" stylesheets="@../../Estilos/Estilos.css" text="☑ Confirmar Reservación" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </Button>
+
+    </children>
+    <padding>
+        <Insets bottom="25.0" left="25.0" right="25.0" top="20.0" />
+    </padding>
+</VBox>

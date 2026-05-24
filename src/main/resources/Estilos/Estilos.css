@@ -1,0 +1,63 @@
+.ancho{
+    /* El degradado exacto de tu imagen: Azul Lavanda -> Morado -> Magenta */
+    -fx-background-color: linear-gradient(to right, #7b78ff, #913cff, #d42ad3);
+    
+    /* Quitamos los bordes redondeados (0 en todas las esquinas) */
+    -fx-background-radius: 0 0 0 0;
+}
+.button{
+   -fx-background-color: blue; 
+}
+.abitacion{
+    -fx-background-color:  linear-gradient(to right, #818CF8, #C026D3);
+    -fx-background-radius:  22 22 0 0;
+}
+.button1{
+    -fx-background-color:  #4338CA;
+    -fx-text-fill:  white;
+    -fx-font-size:  15px;
+    -fx-font-weight:  bold;
+    -fx-background-radius: 12;
+}
+.habitacion{
+    -fx-background-color:   #edf2ff;
+    -fx-background-radius:  10;
+    
+}
+.totalhabi{
+    -fx-background-color:  white;
+    -fx-padding:  22;
+    -fx-background-radius:   18;
+    -fx-border-color:  #E5E7EB;
+    -fx-border-radius: 18;
+    -fx-effect:  dropshadow(gaussian, rgba(0,0,0,0.05), 8,0,0,2);
+}
+.dishabi{
+    -fx-background-color:  #ECFDF5;
+    -fx-padding:  22;
+    -fx-background-radius:   18;
+    -fx-border-color:   #BBF7D0;
+    -fx-border-radius: 18;
+    -fx-effect:   dropshadow(gaussian, rgba(0,0,0,0.05), 8,0,0,2);
+}
+.reshabi{
+    -fx-background-color:   #FEFCE8;
+    -fx-padding:  22;
+    -fx-background-radius:   18;
+    -fx-border-color:    #FDE68A;
+    -fx-border-radius: 18;
+    -fx-effect:    dropshadow(gaussian, rgba(0,0,0,0.05), 8,0,0,2);
+}
+.ocuhabi{
+    -fx-background-color:    #FEF2F2;
+    -fx-padding:  22;
+    -fx-background-radius:   18;
+    -fx-border-color:    #FECACA;
+    -fx-border-radius: 18;
+    -fx-effect:    dropshadow(gaussian, rgba(0,0,0,0.05), 8,0,0,2);
+}
+.buttonsalir{
+    -fx-background-color:  #EF4444;
+    -fx-text-fill:  white;
+    -fx-font-size:  14px;
+}
